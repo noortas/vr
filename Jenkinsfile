@@ -14,6 +14,7 @@ node {
     }
     stage('Prepare') {
       nodejs(nodeJSInstallationName: nodejsVersion) {
+        sh 'npm install'
         sh 'npm start'
         echo 'npm working'
       }

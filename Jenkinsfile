@@ -33,13 +33,7 @@ node {
       echo "Deploying to prod - environment"
     }
 
-    stage('docker') {
-
-      docker.image('ruby:2.3.1').inside {
       }
-
-
-    }
 
   } finally {
     deleteDir()

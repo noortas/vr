@@ -33,8 +33,7 @@ node {
       echo "Deploying to prod - environment"
     }
 
-      }
-
+    
   } finally {
     deleteDir()
   }
